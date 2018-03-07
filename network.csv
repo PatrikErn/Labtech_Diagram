@@ -1,0 +1,25 @@
+ComputerID,Agent Windows Domain,ClientName,AgentName,LocationName,LocationID,Agent IP Address,Agent Router Address,Agent Type,Agent Memory Total,Agent Mainboard,Agent Serial Number,Agent Operating System,Agent OS Version,Agent MAC
+88,Customer1.local,Customer1,SRV001,Office1,35,172.18.60.110,10.10.10.1,Server,4096,VMware Virtual Platform,Serial01,Microsoft Windows Server 2012 R2 Standard x64,6.3.9600 ,00-02-20-A8-64-E7
+97,DC:Customer1.local,Customer1,SRV002,Office1,35,172.18.60.101,10.10.10.1,Server,2047,VMware71,Serial02,Microsoft Windows Server 2008 R2 Standard  x64,6.1.7601 Service Pack 1,00-02-20-A8-64-E8
+126,Customer1.local,Customer1,SRV003,Office1,35,172.18.60.113,10.10.10.1,Server,4095,VMware71,Serial03,Microsoft Windows Server 2008 R2 Standard  x64,6.1.7601 Service Pack 1,00-02-20-A8-64-E9
+183,Customer1.local,Customer1,SRV004,Office1,35,172.18.60.103,10.10.10.1,Server,6144,VMware Virtual Platform,Serial04,Microsoft Windows Server 2012 R2 Standard x64,6.3.9600 ,00-02-20-A8-64-E10
+87,Customer1.local,Customer1,SRV005,Office2,34,192.168.100.2,10.10.10.1,Server,2048,VMware Virtual Platform,Serial05,Microsoft Windows Server 2012 R2 Standard x64,6.3.9600 ,00-02-20-A8-64-E11
+96,Customer1.local,Customer1,SRV006,Office2,34,192.168.100.3,10.10.10.1,Server,4096,VMware Virtual Platform,Serial06,Microsoft Windows Server 2008 R2 Standard  x64,6.1.7601 Service Pack 1,00-02-20-A8-64-E12
+102,Customer1.local,Customer1,SRV007,Office2,34,192.168.100.4,10.0.0.20,Server,2047,VMware Virtual Platform,Serial07,Microsoft© Windows Server© 2008 Standard ,6.0.6002 Service Pack 2,00-02-20-A8-64-E13
+182,Customer1.local,Customer1,SRV008,Office2,34,192.168.100.5,10.0.0.20,Server,8192,VMware Virtual Platform,Serial08,Microsoft Windows Server 2012 R2 Standard x64,6.3.9600 ,00-02-20-A8-64-E14
+309,DC:Customer2.local,Customer2,CU2SRV001,Main Office ,36,192.168.120.2,10.1.1.25,Server,4096,VMware Virtual Platform,Serial09,Microsoft Windows Server 2008 R2 Standard  x64,6.1.7601 Service Pack 1,00-02-20-A8-64-E15
+90,Customer2.local,Customer2,CU2SRV002,Main Office ,36,192.168.120.3,10.1.1.25,Server,2048,VMware Virtual Platform,Serial10,Microsoft Windows Server 2012 R2 Standard x64,6.3.9600 ,00-02-20-A8-64-E16
+101,Customer2.local,Customer2,CU2SRV003,Main Office ,36,192.168.120.4,10.1.1.25,Server,16384,VMware Virtual Platform,Serial11,Microsoft Windows Server 2012 R2 Standard x64,6.3.9600 ,00-02-20-A8-64-E17
+181,Customer2.local,Customer2,CU2SRV004,Main Office ,36,192.168.120.5,10.1.1.25,Server,8192,VMware Virtual Platform,Serial12,Microsoft Windows Server 2012 R2 Standard x64,6.3.9600 ,00-02-20-A8-64-E18
+308,Customer2.local,Customer2,CU2SRV005,Main Office ,36,192.168.120.6,10.1.1.25,Server,4096,VMware Virtual Platform,Serial13,Microsoft Windows Server 2016 Datacenter x64,10.0.14393 ,00-02-20-A8-64-E19
+89,Customer2.local,Customer2,CU2SRV006,Production,37,172.18.80.115,10.2.2.60,Server,2048,VMware Virtual Platform,Serial14,Microsoft Windows Server 2012 R2 Standard x64,6.3.9600 ,00-02-20-A8-64-E20
+100,Customer2.local,Customer2,CU2SRV007,Production,37,172.18.80.116,10.2.2.60,Server,12288,VMware Virtual Platform,Serial15,Microsoft Windows Server 2012 R2 Standard x64,6.3.9600 ,00-02-20-A8-64-E21
+153,Customer2.local,Customer2,CU2SRV008,Production,37,172.18.80.117,10.2.2.60,Server,16384,VMware Virtual Platform,Serial16,Microsoft Windows Server 2012 R2 Standard x64,6.3.9600 ,00-02-20-A8-64-E22
+276,DC:Customer3.local,Customer3,DCSRV001,BackOffice,38,172.18.80.118,10.2.2.60,Server,2048,VMware Virtual Platform,Serial17,Microsoft Windows Server 2016 Datacenter x64,10.0.14393 ,00-02-20-A8-64-E23
+122,Customer3.local,Customer3,ABCWRK001,ABC,14,192.168.0.3,10.5.4.1,Laptop,7880,20AL00BRMS,Serial18,Microsoft Windows 7 Enterprise  x64,6.1.7601 Service Pack 1,00-02-20-A8-64-E24
+98,Customer3.local,Customer3,ABCWRK002,ABC,14,192.168.0.4,10.5.4.1,Laptop,8072,20AL00BRMS,Serial19,Microsoft Windows 10 Enterprise x64,10.0.16299 ,00-02-20-A8-64-E25
+431,Workgroup.local,Customer3,ABCWRK003,ABC,14,192.168.0.5,10.5.4.1,Laptop,7880,20AL007AUK,Serial20,Microsoft Windows 7 Enterprise  x64,6.1.7601 Service Pack 1,00-02-20-A8-64-E26
+289,Customer3.local,Customer3,ABCWRK004,ABC,14,192.168.0.6,10.5.4.1,Laptop,8075,20F600A2MS,Serial21,Microsoft Windows 10 Enterprise x64,10.0.16299 ,00-02-20-A8-64-E27
+128,Customer3.local,Customer3,ABCWRK005,ABC,14,192.168.0.7,10.5.4.1,Laptop,7880,20AL007AUK,Serial22,Microsoft Windows 7 Enterprise  x64,6.1.7601 Service Pack 1,00-02-20-A8-64-E28
+287,Customer3.local,Customer3,OSTWRK001,OST,15,192.168.62.172,10.5.4.70,Laptop,7880,20AL007SMS,Serial23,Microsoft Windows 7 Enterprise  x64,6.1.7601 Service Pack 1,00-02-20-A8-64-E29
+256,Customer3.local,Customer3,OSTWRK002,OST,15,192.168.62.173,10.5.4.71,Laptop,8072,20AL00BRMS,Serial24,Microsoft Windows 10 Enterprise x64,10.0.16299 ,00-02-20-A8-64-E30
