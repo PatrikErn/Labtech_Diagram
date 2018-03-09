@@ -1,10 +1,10 @@
-﻿#Documentation http://psgraph.readthedocs.io
+#Documentation http://psgraph.readthedocs.io
 # Module made by Kevin Marquette
 ######################################
 # Script made by
 # Patrik Ernholdt
 #
-# Experimental build v0.010
+# Experimental build v0.011
 #   Requires Module PSGraph
 #  https://github.com/KevinMarquette/PSGraph/tree/master/docs
 #
@@ -29,14 +29,14 @@ Import-Module PSGraph
 $selfPath = (Get-Item -Path "." -Verbose).FullName
 $dllRelativePath = "........"
 $dllAbsolutePath = Join-Path $selfPath $dllRelativePath
+
 #Csv
  $csv = Import-Csv $selfPath\network.csv
-
-
+  
     #////////////////Graph\\\\\\\\\\\\\\\\\\\\# 
 
-graph g @{rankdir='TB'} {
-  
+digraph "g" @{rankdir='LR';concentrate='true'} {
+    
     $csv | ForEach-Object {
 Entity $PSItem -Property ClientName -Name $PSItem.ClientName -Show Value
     }
@@ -48,18 +48,17 @@ Entity $PSItem -Property 'LocationName' , 'LocationID','Agent Router Address','A
     $csv | ForEach-Object {
 Entity $PSItem -Property 'ComputerID','Agent IP Address','Agent Type','Agent Memory Total','Agent Mainboard','Agent Serial Number','Agent Operating System','Agent OS Version','Agent Windows Domain' -Name $PSItem.AgentName -Show Value
     }
-     
+        
     #////////////////Nodes\\\\\\\\\\\\\\\\\\\\#
-        node $csv -NodeScript {$_.AgentName} @{style='filled';color='blue'}    
-          
+        node $csv -NodeScript {$_.AgentName} @{style='filled';color='blue'}            
         node $csv.where({$_.'Agent Type' -eq 'Server'}) -NodeScript {$_.AgentName} @{shape='rect';style='filled';color='red'}
-        node $csv.where({$_.'Agent Windows Domain' -Match 'workgroup'}) -NodeScript {$_.AgentName} @{shape='rect';style='filled';color='green'}
+        node $csv.where({$_.'Agent Windows Domain' -Match 'workgroup'}) -NodeScript {$_.AgentName} @{shape='rect';style='radial';fillcolor='turquoise;0.5:blue'}
                            
             
      #////////////////Edges\\\\\\\\\\\\\\\\\\\\#              
-            
-      $csv |%{edge -From $_.ClientName -To $_.LocationName @{color='blue'}}         
-      $csv |%{edge -From $_.LocationName -To $_.AgentName @{color='green'}}
+          
+      $csv | %{edge -From $_.ClientName  $_.LocationName @{color='blue'}};         
+      $csv | %{edge -From $_.LocationName -To $_.AgentName @{color='green'}}
             
       
 #////////////////Inline\\\\\\\\\\\\\\\\\\\\#    
