@@ -17,3 +17,6 @@ Powershell script to automatically draw a simple topology from ConnectWise Autom
   Make sure you have following columns :
       ComputerID,Agent Windows Domain,Client Name,Agent Name,Location Name,LocationID,Agent IP Address,Agent Router Address,Agent Type,Agent Memory Total,Agent Mainboard,Agent Serial Number,Agent Operating System,Agent OS Version,Agent MAC
 Export as csv , remove spaces from Client Name , Location Name and Agent Name.
+
+
+[Update 2018-03-8 | Fixed multiple arrows from edge ClientName to LocationName |  
