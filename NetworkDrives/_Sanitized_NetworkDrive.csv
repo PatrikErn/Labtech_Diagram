@@ -1,0 +1,7 @@
+ComputerID, Computer Name, Location Name, Drive Letter, Mount Point, User, Domain, Online, Last Contact
+1,Server02,Location1,I,\\Server02\ltshare,Server02\Administrator,WORKGROUP,Yes,2018-06-14 10:46:27
+1,Server02,Location1,G,\\Server02\ltshare2,local,Domain02.local,Yes,2018-06-14 10:46:27
+346,X1PE2,Location2,I,\\Server2\ltshare,Domain01\User05,Domain01.local,No,2018-06-14 10:46:25
+1,Server03,Location3,I,\\Server03\ltshare,Server02\Administrator,WORKGROUP,Yes,2018-06-14 10:46:27
+1,Server03,Location3,G,\\Server03\ltshare2,local,Domain02.local,Yes,2018-06-14 10:46:27
+346,X1,Location3,I,\\Server3\ltshare,Domain02\User05,Domain02.local,Yes,2018-06-14 10:46:25
