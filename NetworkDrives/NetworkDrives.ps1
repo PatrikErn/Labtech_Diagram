@@ -1,4 +1,4 @@
-﻿#Documentation http://psgraph.readthedocs.io
+#Documentation http://psgraph.readthedocs.io
 # Module made by Kevin Marquette
 ######################################
 # Script made by
@@ -45,10 +45,11 @@ Entity $PSItem -Property 'Computer Name' ,'Domain', 'Drive Letter','Mount Point'
     }
   
 #////////////////Nodes\\\\\\\\\\\\\\\\\\\\#         
-        node $csv.where({$_.'Online' -eq 'No'}) -NodeScript {$_.'Mount Point'} @{style='filled';color='red'} 
+         
         node $csv -NodeScript {$_.'Mount Point'} @{shape='rect';fillcolor='green'}            
         node $csv.where({$_.'Online' -eq 'No'}) -NodeScript {$_.'Mount Point'} @{fillcolor='red'}
-        Where-Object {node $csv.where({$_.'Domain' -like 'workgroup'}) -NodeScript {$_.'Mount Point'} @{shape='rect';fillcolor='turquoise'}} 
+        node $csv.where({$_.'Domain' -like 'workgroup'}) -NodeScript {$_.'Mount Point'} @{fillcolor='turquoise'}
+       
                         
             
      #////////////////Edges\\\\\\\\\\\\\\\\\\\\# 
