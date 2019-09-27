@@ -48,7 +48,7 @@ Entity $PSItem -Property 'Computer Name' ,'Domain', 'Drive Letter','Mount Point'
          
         node $csv -NodeScript {$_.'Mount Point'} @{shape='rect';fillcolor='green'}            
         node $csv.where({$_.'Online' -eq 'No'}) -NodeScript {$_.'Mount Point'} @{fillcolor='red'}
-        node $csv.where({$_.'Domain' -like 'workgroup'}) -NodeScript {$_.'Mount Point'} @{fillcolor='turquoise'}
+        node $csv.where({$_.'Domain' -like 'workgroup'}) -NodeScript {$_.'Mount Point'} @{fillcolor='yellow'}
        
                         
             
@@ -62,7 +62,7 @@ Entity $PSItem -Property 'Computer Name' ,'Domain', 'Drive Letter','Mount Point'
     inline 'fontsize=20' 
     #///////////////Legend\\\\\\\\\\\\\\\\\\\\#
     inline     'subgraph cluster0 {
-     legend [ label=" {Legend  | {Red | Drive Disconnected}| {Green|Drive online and in domain}|Turquoise| Not domain connected}",shape=record]
+     legend [ label=" {Legend  | {Red |Drive Disconnected}| {Green |Drive online and in domain}|{Yellow |Not domain connected}}",shape=record]
             } '
            }| 
           #Export-PSGraph -ShowGraph -LayoutEngine Circular  -DestinationPath $selfPath\networkdrive_circ.jpg
